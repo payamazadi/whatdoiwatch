@@ -1,0 +1,31 @@
+service: whatdoiwatch
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  apiGateway:
+    binaryMediaTypes:
+      - 'application/octet-stream'
+      - 'multipart/form-data'
+  httpApi:
+    cors: true
+
+functions:
+  whatdoiwatch:
+    handler: handler.main
+    events:
+      - httpApi:
+          path: /
+          method: post
+
+package:
+  exclude:
+    - node_modules/**
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux

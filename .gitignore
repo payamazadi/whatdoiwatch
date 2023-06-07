@@ -1,0 +1,94 @@
+# Node
+node_modules/
+package-lock.json
+
+#Serverless
+.serverless/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+
+# Flask
+instance/
+.webassets-cache
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Others
+*.bak
+*.swp
+*~
+*.cache
+*.egg-info/
+dist/
+build/
+docs/_build/
+target/
+*.class
+*.sln
+*.user
+*.ncb
+*.suo
+*.obj
+*.exe
+*.pdb
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ilk
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.log
+*.lib
+*.sbr
+*.sdf
+
+# aux files
+ViewingActivity.csv
+list.txt
+list_out.csv
+Netflix.ipynb
+
+# Angular
+.angular/
