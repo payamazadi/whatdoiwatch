@@ -13,7 +13,8 @@ provider:
 
 functions:
   whatdoiwatch:
-    handler: handler.main
+    handler: handler.lambda_handler
+    timeout: 120
     events:
       - httpApi:
           path: /
@@ -22,6 +23,7 @@ functions:
 package:
   exclude:
     - node_modules/**
+    - frontend/**
 
 plugins:
   - serverless-python-requirements
